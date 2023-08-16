@@ -1,4 +1,4 @@
-import { Nunito } from "next/font/google";
+import { Rubik } from "next/font/google";
 
 import Navbar from "@/app/components/navbar/Navbar";
 import LoginModal from "@/app/components/modals/LoginModal";
@@ -9,15 +9,16 @@ import RentModal from "@/app/components/modals/RentModal";
 import ToasterProvider from "@/app/providers/ToasterProvider";
 
 import "./globals.css";
+
 import ClientOnly from "./components/ClientOnly";
 import getCurrentUser from "./actions/getCurrentUser";
 
 export const metadata = {
-  title: "Airbnb",
+  title: "Rent Accomodations",
   description: "Airbnb Clone",
 };
 
-const font = Nunito({
+const font = Rubik({
   subsets: ["latin"],
 });
 
